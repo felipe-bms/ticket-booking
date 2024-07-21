@@ -1,4 +1,4 @@
-# Cineflex - Sistema de Compra de Ingressos
+# Cineflex - Sistema de Compra de Ingressos (Mobile Only)
 
 ## Índice
 - [Descrição do Projeto](#descrição-do-projeto)
