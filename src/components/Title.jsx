@@ -17,12 +17,13 @@ const TitleContainer = styled.h1`
   line-height: 39.13px;
   letter-spacing: 0.04em;
   text-align: center;
-
-  color: rgba(255, 255, 255, 1);
+  color: ${({ isFinalized }) =>
+    isFinalized ? "rgba(157, 184, 153, 1)" : "rgba(255, 255, 255, 1)"};
 `;
 
 const Title = ({ children }) => {
-  return <TitleContainer>{children}</TitleContainer>;
+  const isFinalized = children === "Pedido finalizado!";
+  return <TitleContainer isFinalized={isFinalized}>{children}</TitleContainer>;
 };
 
 export default Title;

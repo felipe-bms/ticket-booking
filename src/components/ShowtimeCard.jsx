@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Card = styled.div`
   border: none;
@@ -34,7 +35,7 @@ const Showtimes = styled.div`
   margin-top: 10px;
 `;
 
-const ShowtimeButton = styled.button`
+const ShowtimeLink = styled(Link)`
   font-family: Sarala;
   font-size: 16px;
   font-weight: 400;
@@ -48,6 +49,7 @@ const ShowtimeButton = styled.button`
   padding: 8px 16px;
   cursor: pointer;
   border: 2px solid rgba(238, 137, 127, 1);
+  text-decoration: none;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.3);
@@ -62,7 +64,9 @@ const ShowtimeCard = ({ day }) => {
       </DateInfo>
       <Showtimes>
         {day.showtimes.map((showtime) => (
-          <ShowtimeButton key={showtime.id}>{showtime.name}</ShowtimeButton>
+          <ShowtimeLink key={showtime.id} to={`/assentos/${showtime.id}`}>
+            {showtime.name}
+          </ShowtimeLink>
         ))}
       </Showtimes>
     </Card>
