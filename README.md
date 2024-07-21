@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Cineflex - Sistema de Compra de Ingressos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Cineflex](https://mock-api.driven.com.br/api/v8/cineflex/movies)
 
-## Available Scripts
+## Índice
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação e Execução](#instalação-e-execução)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Contribuições](#contribuições)
+- [Contato](#contato)
 
-In the project directory, you can run:
+## Descrição do Projeto
 
-### `npm start`
+O **Cineflex** é uma aplicação web desenvolvida para facilitar a compra de ingressos de cinema. A aplicação permite que os usuários escolham filmes, horários de exibição e assentos de forma interativa e prática. Este projeto demonstra habilidades em React, integração com APIs, roteamento e estilização com Styled Components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Listagem de filmes em cartaz.
+- Exibição dos horários de exibição dos filmes selecionados.
+- Seleção de assentos disponíveis para uma sessão específica.
+- Formulário para a compra dos ingressos.
+- Página de confirmação de compra com detalhes do pedido.
+- Navegação intuitiva entre as diferentes páginas da aplicação.
 
-### `npm test`
+## Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **React Router**: Biblioteca para roteamento no React.
+- **Axios**: Cliente HTTP para realizar requisições à API.
+- **Styled Components**: Biblioteca para estilização de componentes no React.
+- **JavaScript (ES6+)**: Linguagem de programação utilizada.
+- **HTML5**: Linguagem de marcação para estruturação das páginas.
+- **CSS3**: Linguagem de estilo para a apresentação visual das páginas.
 
-### `npm run build`
+## Instalação e Execução
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (versão 14 ou superior)
+- npm (versão 6 ou superior) ou yarn (versão 1.22 ou superior)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Passos para Instalação
 
-### `npm run eject`
+1. Clone este repositório:
+   git clone https://github.com/limbopath/ticket-booking.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Navegue até o diretório:
+   cd ticket-booking-driven
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instale as dependências do projeto:
+   npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Executando o Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Inicie o servidor de desenvolvimento:
+   npm start
 
-## Learn More
+2. Abra seu navegador e acesse:
+   http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Estrutura do Projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```plaintext
+cineflex/
+│
+├── public/
+│   ├── index.html
+│   └── assets/
+│       └── logo.png
+│
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Title.js
+│   │   ├── AllMovies.js
+│   │   ├── Sessions.js
+│   │   ├── Seats.js
+│   │   ├── OrderInfo.js
+│   │   ├── Movie.js
+│   │   ├── ShowtimeCard.js
+│   │   └── Loading.js
+│   │
+│   ├── styles/
+│   │   └── GlobalStyle.js
+│   │
+│   ├── App.js
+│   ├── index.js
+│   └── reportWebVitals.js
+│
+├── .gitignore
+├── package.json
+└── README.md
 
-### Code Splitting
+## Contato
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Se você tiver alguma dúvida ou quiser entrar em contato, pode me encontrar em:
 
-### Analyzing the Bundle Size
+- Email: felipe.bms@hotmail.com
+- LinkedIn: https://www.linkedin.com/in/felipe-barreto-876649184/
+- GitHub: https://github.com/limbopath/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Obrigado por visitar este projeto! Se você gostou, por favor, deixe uma estrela no repositório e compartilhe com outras pessoas interessadas.
