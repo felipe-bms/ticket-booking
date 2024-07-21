@@ -1,7 +1,5 @@
 # Cineflex - Sistema de Compra de Ingressos
 
-![Cineflex](https://mock-api.driven.com.br/api/v8/cineflex/movies)
-
 ## Índice
 - [Descrição do Projeto](#descrição-do-projeto)
 - [Funcionalidades](#funcionalidades)
