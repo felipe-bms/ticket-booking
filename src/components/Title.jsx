@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 const TitleContainer = styled.h1`
   width: 375px;
-  height: 78px;
   position: relative;
   top: 20px;
   margin: 0 auto;
   margin-top: 68px;
+  margin-bottom: 44px;
   gap: 0px;
   opacity: 1;
 

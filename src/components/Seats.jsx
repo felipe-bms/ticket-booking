@@ -10,6 +10,7 @@ const SeatsContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 380px;
   padding: 0 20px;
 `;
 

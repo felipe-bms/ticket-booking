@@ -22,6 +22,7 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%; /* Garantir que o wrapper ocupe a largura total */
+  max-width: 800px;
 `;
 
 function App() {
